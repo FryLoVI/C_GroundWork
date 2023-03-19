@@ -1,0 +1,23 @@
+#include <stdio.h>
+/* Copy Inout to Output Version 1 */
+main()
+{
+  int c;
+  
+  c=getchar();
+  while(c!=EOF) {
+    putchar(c);
+    c = getchar();
+  }
+}
+
+#include <stdio.h>
+/* Copy Inout to Output Version 2 */
+main()
+{
+  int c;
+  
+  while((c = getchar()) ! = EOF) {
+    putchar(c);
+  }
+}
